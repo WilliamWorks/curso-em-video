@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@font-face {
+    font-family: padrao;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: mediumspringgreen;
+    margin: 0px;
+    color: black;
+    font-weight: 500;
+    
+}
+
+header{
+    background-image: linear-gradient(to bottom, mediumspringgreen, rgb(0, 70, 0));
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+}
+
+nav{
+    display: inline-flexbox;
+    text-align: left;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+nav > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 255, 0, 0.586);
+    border-radius: 5px;
+
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.832);
+    margin: 0px 30px;
+    padding: 0px;
+    box-shadow: 10px rgba(0, 0, 0, 0.432);
+}
+
+main > p, h1, h2 {
+    padding: 0px 20px;
+}
+
+main > div#video {
+    margin: 0%;
+}
+
+main > h1, h2 {
+    font-family: 'padrao';
+}
+
+img.full {
+    width: 100%;
+}
+
+h2 {
+    background-image: linear-gradient(to right, rgba(0, 250, 154, 0.423), rgba(255, 255, 255, 0) );
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main > div#video {
+    width: 98%;
+    margin: 0px;
+    padding: 150px 43px;
+    background-color: rgb(0, 43, 0);
+}
+
+div#oi {
+    background-color: rgba(0, 255, 157, 0.34);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+div#oi > h3 {
+    margin: 0px 20px;
+    padding: 0px;
+    background-color: rgb(0, 171, 105);
+}
+
+ul {
+    list-style: georgian;
+    column-count: 2;
+}
+
+picture {
+    margin: 0px;
+    padding: 0px;
+}
+
+span.hoje {
+    text-decoration: underline;   
+}
+span.destaque {
+    color: rgb(0, 70, 0);
+}
+
+span.destaque > a{
+    text-decoration: none;
+    color: rgb(0, 70, 0);
+}
+
+footer {
+    background-color: rgb(0, 45, 0);
+    color:  rgb(0, 171, 105);
+    margin: 10px 0px 0px 0px;
+    padding: 2px;
+    text-align: center;
+}
+
+footer > p {
+    text-align: center;
+}
+
+span.destaqueb {
+    color: white;
+    font-weight: bold;
+}

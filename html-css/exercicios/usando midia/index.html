@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Midias</title>
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <picture>
+        <source media="(max-width:750px )" srcset="paisagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="paisagem-m.png" type="image/png">
+        <img src="paisagem-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- Visando navegadores que nao suportem algum tipo de arquivo colocamos todos-->
+    <audio controls>
+        <source src="The Moon Drops - Nathan Moore.mp3" type="audio/mpeg">
+        <source src="The Moon Drops - Nathan Moore.ogg" type="audio/ogg">
+        <source src="The Moon Drops - Nathan Moore.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não é compativel com reproodução de áudio. <a href="The Moon Drops - Nathan Moore.mp3">Click aqui para baixa-lo</a></p>
+    </audio>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este vídeo esta hospedado no meu proprio servidor</p>
+    <!-- Visando navegadores que nao suportem algum tipo de arquivo colocamos todos-->
+    <video width="400px" poster="paisagem-p.png" controls>
+        <source src="pexels-any-lane-5944932.mp4" type="video/mp4">
+        <source src="pexels-any-lane-5944932.m4v" type="video/m4v">
+        <source src="pexels-any-lane-5944932.webm" type="video/webm">
+        <source src="pexels-any-lane-5944932.ogv" type="video/ogg">
+        <p>Infelizmente o seu navegador não tem compatibilidade com reprodução de arquivos. <a href="pexels-any-lane-5944932.mp4">Click aqui para baixa-lo</a></p>
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rJ0HcezG-KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
